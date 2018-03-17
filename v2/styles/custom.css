@@ -2,11 +2,16 @@
 body {
   padding-top: 90px;
   -webkit-overflow-scrolling: touch;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: 'Open Sans', sans-serif;
 }
 .navbar {
 	min-height: 70px;
 	padding: 20px 0;
-	background: #0c1a1e;
+	background: #000;
 	border-bottom:none;
 }
 
@@ -19,6 +24,11 @@ body {
 
 .navbar-brand img {
 	width:100%;
+}
+
+.services.section-one .service-each {
+	border:none;
+	box-shadow:none;
 }
 
 .jumbotron {
@@ -87,11 +97,16 @@ body {
 	background: #4ab0e3;
 	border: #4ab0e3;
 	text-transform: uppercase;
+	  box-shadow: inset 0 0 0 0 #D80286 !important;
+	  -webkit-transition: ease-out 0.5s;
+	  -moz-transition: ease-out 0.5s;
+	  transition: ease-out 0.5s;
 }
 
 .searchbox button:hover, .searchbox button:focus {
 	background: #54c0ac;
 	border: #54c0ac;
+	box-shadow: inset 400px 0 0 0 #D80286 !important;
 }
 
 .searchbox i {
@@ -106,11 +121,38 @@ body {
 }
 
 .service-each {
-	border:1px solid #ececec;
+	border:1px solid #cdcdcd;
 	-webkit-box-shadow: 0px 0px 14px -3px rgba(0,0,0,0.3);
 	-moz-box-shadow: 0px 0px 14px -3px rgba(0,0,0,0.3);
 	box-shadow: 0px 0px 14px -3px rgba(0,0,0,0.3);
 	margin-bottom: 20px;
+}
+
+.services.section-one {
+	border:none;
+	box-shadow: none;
+}
+
+.services.section-one span {
+	border-top:none;
+	text-align:center;
+	padding: 0 0 15px;
+	font-size: 12px;
+}
+
+.page-two h1 {
+	margin-top: 0;
+}
+
+.page-two .nexpool-form {
+	margin-top: 30px;
+	padding-top: 30px;
+}
+
+.services.section-one .service-each h2 {
+	margin: 10px 0;
+	font-weight: bold;
+	font-size: 16px;
 }
 
 .service-each img {
@@ -166,19 +208,6 @@ button, button:hover, button:focus {
 	margin-bottom: 15px;
 }
 
-.charges {
-	position:relative;
-	border-bottom:1px solid #cdcdcd;
-	padding-bottom: 15px;
-}
-.charges:before {
-	position:absolute;
-	content:'+';
-    left: -30px;
-    top: -15px;
-	font-size:35px;
-}
-
 .boarding-form {
 	padding-bottom:50px;
 }
@@ -199,10 +228,18 @@ button, button:hover, button:focus {
 }
 
 .nexpool-form {
-	padding: 66px;
+	padding: 66px 130px;
     border: 1px solid #cdcdcd;
     box-shadow: 0px 0px 14px -3px rgba(0,0,0,0.3);
     box-sizing: border-box;
+}
+
+.boarding-form.page-two .form-control {
+	border-radius: 3px;
+}
+
+.boarding-form.page-two label {
+	color: #337AB7;
 }
 
 .entry-form h1.page-heading {
@@ -260,6 +297,36 @@ button, button:hover, button:focus {
 
 .input-group-addon {
 	padding:0;
+	background: #4ab0e3;
+	border: #4ab0e3;
+	color:#fff;
+}
+
+.final-stats {
+	margin-top:15px;
+}
+
+.circular-progress-bar {
+	margin-top:-20px !important;
+}
+
+.final-stats span {
+	display:block;
+	padding-left:20px;
+	font-weight:bold;
+}
+
+.primary-figure {
+    font-weight: lighter;
+    font-size: 28px;
+    line-height: 1;
+    margin-bottom: 5px;
+	margin-top: 20px;
+	color:#54c0ac;
+}
+
+.input-group-addon:hover {
+	padding:0;
 	background: #54c0ac;
 	border: #54c0ac;
 	color:#fff;
@@ -281,6 +348,23 @@ button, button:hover, button:focus {
 .entry-page {
 	padding-bottom: 100px;
 }
+
+.entry-page label {
+	color: #337AB7;
+}
+
+.page-three {
+	padding: 30px 130px 66px;
+    border: 1px solid #cdcdcd;
+    box-shadow: 0px 0px 14px -3px rgba(0,0,0,0.3);
+    box-sizing: border-box;
+	margin-top:30px;
+}
+
+.page-three h1 {
+	margin-top:0;
+}
+
 
 .user-dropdown {
     position: relative;
@@ -313,7 +397,7 @@ button, button:hover, button:focus {
 }
 
 .profile-page {
-	padding: 100px 15px; 
+	padding: 30px 15px; 
 }
 
 .profile-page .form-horizontal label {
@@ -356,6 +440,7 @@ button, button:hover, button:focus {
 .profile-completion h1 {
     margin: 0;
     font-size: 18px; 
+	font-weight:bold;
 }
 
 .profile-completion p {
@@ -400,8 +485,8 @@ button, button:hover, button:focus {
 
 .total-box label {
 	font-weight: normal;
-	font-size: 12px;
-	color: #888;
+	font-size: 11px;
+	color: #888 !important;
 	text-transform: uppercase;
 }
 
@@ -421,7 +506,7 @@ button, button:hover, button:focus {
 
 .inline-items span {
 	display: inline-block;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: normal;
     margin-left: 4px;
     margin-bottom: 3px;
@@ -482,7 +567,9 @@ button, button:hover, button:focus {
 	background: #f7555e;
 }
 
-
+.profile-page textarea {
+	min-height: 372px;
+}
 
 .max-box h3, .min-box h3 {
 	margin:0;
@@ -538,8 +625,13 @@ button, button:hover, button:focus {
 }
 
 .table-heading {
-	margin:0 0 20px;
+	margin:0 0 6px;
 	font-size: 18px;
+	font-weight: bold;
+}
+
+.table-container, .pagination>li>a, .pagination>li>span {
+	background: #ececec;
 }
 
 .pagination {
@@ -555,6 +647,201 @@ button, button:hover, button:focus {
 	background: #54c0ac;
 	border-color: #54c0ac;
 }
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {display:none;}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.custom-toggle-holder > label{
+	margin-top: 9px;
+	margin-right: 9px;
+}
+
+.custom-toggle {
+	display: flex;
+}
+
+.fee-calculator span {
+	display: inline-block;
+	font-size:20px;
+	margin-left:3px;
+	margin-top: 2px;
+}
+
+.fee-calculator {
+	margin-bottom:30px;
+}
+
+.host-fee {
+	position: relative;
+}
+
+.host-fee:after {
+	position: absolute;
+	content:'+';
+    top: -5px;
+    right: 15px;
+    font-size: 30px;
+	color:#54c0ac;
+}
+
+.platform-fee {
+	position: relative;
+}
+
+.platform-fee:after {
+	position: absolute;
+	content:'=';
+    top: -5px;
+    right: 15px;
+    font-size: 30px;
+	color:#54c0ac;
+}
+
+.fee-calculator .form-control {
+	width:80%;
+	float: left !important
+}
+
+.fee-calculator label {
+	width:100%;
+}
+
+
+.custom-toggle input:checked + .slider {
+  background-color: #54c0ac;
+}
+
+.custom-toggle input:focus + .slider {
+  box-shadow: 0 0 1px #54c0ac;
+}
+
+.custom-toggle input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.min-contribution {
+	margin-top:20px;
+}
+
+.min-contribution span {
+	display: inline-block;
+	text-transform: uppercase;
+	font-weight:bold;
+}
+
+.min-contribution span:last-child {
+	font-size:20px;
+	color:#54c0ac;
+}
+
+.stats-bottom {
+	border-top:1px solid #cdcdcd;
+	padding-top: 15px;
+	margin-top:15px
+}
+
+.my-contribution span {
+    text-transform: uppercase;
+    font-weight: bold;
+	display:block;
+	text-align:center
+}
+
+.my-contribution span:last-child {
+	font-size: 20px;
+    color: #54c0ac;
+	line-height: 1;
+    margin-top: 5px;
+}
+
+.my-contribution {
+    border: 1px solid #cdcdcd;
+    border-radius: 10px;
+    width: 80%;
+    margin: 23px auto 10px;
+    box-sizing: border-box;
+    padding: 14px 7px;
+}
+
+.table-bordered, .table-bordered>tbody>tr>td, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>td, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>thead>tr>th {
+	border: 2px solid #fff;
+}
+
+.table-responsive table tbody tr:nth-child(odd) {
+	background: #FFF
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.code-block {
+	position:relative;
+}
+
+.code-block .input-group-addon {
+	position: absolute;
+    right: 0;
+    bottom: 1px;
+    z-index: 1;
+    width: auto;
+}
+
+.page-three .data-right .btn-submit {
+	width:100%;
+}
+
+.main-fields input {
+	padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.main-fields .input-group-addon {
+	padding-left: 15px;
+    padding-right: 15px;
+}
+
+.profile-page label {
+	color: #337AB7;
+}
+
 
 /*FOOTER*/
 
@@ -597,8 +884,175 @@ footer { background-color:#0c1a1e; font-family: 'Open Sans', sans-serif; padding
  .bottom_ul li { float:left; line-height:40px;}
  .bottom_ul li:after { content:"/"; color:#FFF; margin-right:8px; margin-left:8px;}
  .bottom_ul li a { color:#FFF;  font-size:12px;}
+ 
+ 
+ /********** Circular progress Bar **********/
+
+.progress{
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    background: none;
+    margin: 0 auto;
+    box-shadow: none;
+    position: relative;
+}
+.progress:after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 12px solid #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.progress > span{
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+.progress .progress-left{
+    left: 0;
+}
+.progress .progress-bar{
+    width: 100%;
+    height: 100%;
+    background: none;
+    border-width: 12px;
+    border-style: solid;
+    position: absolute;
+    top: 0;
+}
+.progress .progress-left .progress-bar{
+    left: 100%;
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 80px;
+    border-left: 0;
+    -webkit-transform-origin: center left;
+    transform-origin: center left;
+}
+.progress .progress-right{
+    right: 0;
+}
+.progress .progress-right .progress-bar{
+    left: -100%;
+    border-top-left-radius: 80px;
+    border-bottom-left-radius: 80px;
+    border-right: 0;
+    -webkit-transform-origin: center right;
+    transform-origin: center right;
+    animation: loading-1 1.8s linear forwards;
+}
+.progress .progress-value{
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    background: #44484b;
+    font-size: 24px;
+    color: #fff;
+    line-height: 135px;
+    text-align: center;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+.progress.blue .progress-bar{
+    border-color: #049dff;
+}
+.progress.blue .progress-left .progress-bar{
+    animation: loading-2 1.5s linear forwards 1.8s;
+}
+.progress.yellow .progress-bar{
+    border-color: #fdba04;
+}
+.progress.yellow .progress-left .progress-bar{
+    animation: loading-3 1s linear forwards 1.8s;
+}
+.progress.pink .progress-bar{
+    border-color: #ed687c;
+}
+.progress.pink .progress-left .progress-bar{
+    animation: loading-4 0.4s linear forwards 1.8s;
+}
+.progress.green .progress-bar{
+    border-color: #1abc9c;
+}
+.progress.green .progress-left .progress-bar{
+    animation: loading-5 1.2s linear forwards 1.8s;
+}
+@keyframes loading-1{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+}
+@keyframes loading-2{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(144deg);
+        transform: rotate(144deg);
+    }
+}
+@keyframes loading-3{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+}
+@keyframes loading-4{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(36deg);
+        transform: rotate(36deg);
+    }
+}
+@keyframes loading-5{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(126deg);
+        transform: rotate(126deg);
+    }
+}
+@media only screen and (max-width: 990px){
+    .progress{ margin-bottom: 20px; }
+}
+
+
+@media only screen and (max-width: 1024px) and (min-width: 768px) { 
+	.page-two .nexpool-form {
+		padding: 30px 45px 66px;
+	}
+	.page-three {
+		padding: 30px 45px 66px;
+	}
+}
 
 @media only screen and (max-width: 767px) { 
+	.searchbox button {
+		width:100%;
+	}
+
 	.navbar-brand {
 		margin-left: 15px !important;
 	}
@@ -639,4 +1093,30 @@ footer { background-color:#0c1a1e; font-family: 'Open Sans', sans-serif; padding
 	.code-area {
     	padding-right: 0;
 	}
+	
+	.platform-fee {
+		margin-top:50px;
+		margin-bottom:50px;
+	}
+	
+	.host-fee:after, .platform-fee:after {
+		top:unset;
+		right: 50%;
+		transform:translate(-50%,0);
+		bottom: -50px;
+	}
+	.boarding-form.page-two .btn-submit {
+		width: 60%;
+		margin: 0 auto;
+		float: none !important;
+		display: block;
+	}
+	
+	.page-three {
+		padding:20px 0 30px;
+	}
+	.circular-progress-bar {
+		margin-top:20px !important;
+	}
+	
 }

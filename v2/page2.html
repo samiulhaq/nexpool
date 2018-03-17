@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    
     <link rel="stylesheet" href="styles/bootstrap.min.css" />
     <link rel="stylesheet" href="styles/custom.css" />
     
@@ -38,68 +41,77 @@
 
 <div class="container">
 	<div class="row">
-    <div class="col-sm-12 boarding-form">
-         	<h1 class="page-heading">Onboarding Form</h1>
+    <div class="col-sm-12 boarding-form page-two">
           <form class="nexpool-form clearfix">
+          	<h1 class="page-heading">Onboarding Form</h1>
             <div class="form-group">
               <label>First Name <i class="glyphicon glyphicon-question-sign" data-toggle="tooltip" data-placement="right" title="Explanation goes here"></i></label>
               <input type="text" class="form-control" placeholder="First Name">
             </div>
+            <div class="form-group clearfix custom-toggle-holder">
+              <label class="pull-left ">Last Name</label>
+              <div class="custom-toggle pull-left"> 
+              	<label class="switch">
+                  <input type="checkbox">
+                  <span class="slider round"></span>
+                </label>
+            	</div>
+                <input type="text" class="form-control" placeholder="Last Name">
+            </div>
             <div class="form-group">
-              <label>Last Name</label>
-              <input type="text" class="form-control" placeholder="Last Name">
+              <label>Country <i class="glyphicon glyphicon-question-sign" data-toggle="tooltip" data-placement="right" title="Explanation goes here"></i></label>
+              <input type="text" class="form-control" placeholder="Country">
             </div>
             <div class="row">
            	<div class="col-sm-6 col-left">
                 <div class="form-group">
-                  <label>State </label>
+                  <label>State <i class="glyphicon glyphicon-question-sign" data-toggle="tooltip" data-placement="right" title="Explanation goes here"></i></label>
                   <input type="text" class="form-control" placeholder="State">
                 </div>
             	</div>
               <div class="col-sm-6">
                   <div class="form-group">
-                      <label>City</label>
+                      <label>City <i class="glyphicon glyphicon-question-sign" data-toggle="tooltip" data-placement="right" title="Explanation goes here"></i></label>
                       <input type="text" class="form-control" placeholder="City">
                   </div>
               </div>
-            </div>
-            <div class="form-group border-top">
-              <label>Zip</label>
-              <input type="text" class="form-control" placeholder="Zip">
             </div>
             <div class="form-group">
               <label>Description <i class="glyphicon glyphicon-question-sign" data-toggle="tooltip" data-placement="right" title="Explanation goes here"></i></label>
               <textarea class="form-control" placeholder="Description" rows="3"></textarea>
             </div>
-            <div class="form-group">
-              <label>Check this</label>
-              <div class="btn-group btn-toggle form-control"> 
-              	<button class="btn btn-xs btn-default">ON</button>
-              	<button class="btn btn-xs btn-primary active">OFF</button>
+            <div class="form-group clearfix custom-toggle-holder">
+              <label class="pull-left ">Check this</label>
+              <div class="custom-toggle pull-left"> 
+              	<label class="switch">
+                  <input type="checkbox">
+                  <span class="slider round"></span>
+                </label>
             	</div>
             </div>
             
             <div class="bottom-section">
             
              	<div class="form-group">
-                  <label>Text: Summary</label>
+                  <label>Text: Summary <i class="glyphicon glyphicon-question-sign" data-toggle="tooltip" data-placement="right" title="Explanation goes here"></i></label>
                   <textarea class="form-control" placeholder="Description" rows="3"></textarea>
             	</div>
-              <div class="row">
-              	<div class="col-sm-6 form-inline clearfix">
-                      <div class="form-group clearfix">
-                          <label class="pull-left">Host fee</label>
-                          <input type="text" class="form-control pull-right" readonly disabled placeholder="Host fee">
-                      </div>
-                      <div class="form-group charges clearfix">
-                          <label class="pull-left">Platform fee</label>
-                          <input type="text" class="form-control pull-right" readonly disabled placeholder="Platform fee">
-                      </div>
-                      <div class="form-group clearfix">
-                          <label class="pull-left">Total fee</label>
-                          <input type="text" class="form-control pull-right" readonly disabled placeholder="Total fee">
-                      </div>
-              	</div>
+              <div class="col-sm-offset-1 col-sm-10 fee-calculator">
+              	<div class="col-sm-4 host-fee">
+                	<label class="pull-left">Host fee</label>
+                	<input type="text" class="form-control pull-right" readonly disabled placeholder="Host fee">
+                    <span>%</span>
+                </div>
+                <div class="col-sm-4 platform-fee">
+                	<label class="pull-left">Platform fee</label>
+                    <input type="text" class="form-control pull-right" readonly disabled placeholder="Platform fee">
+                    <span>%</span>
+                </div>
+                <div class="col-sm-4 total-fee">
+                	 <label class="pull-left">Total fee</label>
+                     <input type="text" class="form-control pull-right" readonly disabled placeholder="Total fee">
+                     <span>%</span>
+                </div>
               </div>
             </div>
             <button type="submit" class="btn btn-primary btn-lg pull-right btn-submit">Submit</button>

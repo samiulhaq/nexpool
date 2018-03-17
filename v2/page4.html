@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    
     <link rel="stylesheet" href="styles/bootstrap.min.css" />
     <link rel="stylesheet" href="styles/custom.css" />
     <link rel="stylesheet" href="fa/web-fonts-with-css/css/fontawesome-all.min.css"/>
@@ -52,13 +55,13 @@
       <div class="col-sm-5">
         <div class="form-horizontal box">
           <div class="form-group">
-            <label class="col-sm-3 control-label">Name</label>
+            <label class="col-sm-3 control-label">Name <i class="glyphicon glyphicon-question-sign" data-toggle="tooltip" data-placement="right" title="What is 'Header Option 1'"></i></label>
             <div class="col-sm-9">
               <input type="text" class="form-control" placeholder="Name">
             </div>
           </div>
           <div class="form-group">
-            <label class="col-sm-3 control-label">Age</label>
+            <label class="col-sm-3 control-label">Age <i class="glyphicon glyphicon-question-sign" data-toggle="tooltip" data-placement="right" title="What is 'Header Option 1'"></i></label>
             <div class="col-sm-9">
               <input type="text" class="form-control" placeholder="Age">
             </div>
@@ -91,155 +94,77 @@
         </div>
       </div>
       <div class="col-sm-7 profile-completion">
-        <div class="box">
+      	<div class="box">
           <h1>Profile Completion</h1>
-          <p>This section show you the progress of your profile page completion</p>
-          <div class="progress">
-            <div class="progress-bar" role="progressbar" aria-valuenow="70"
-            aria-valuemin="0" aria-valuemax="100" style="width:70%">
-              70%
-            </div>
-          </div>
-        </div>
-      </div>
-  </div>
-  <div class="row">
-    <div class="col-sm-5 controls">
-        <div class="box">
-          <h1>Controls</h1>
           <div class="row">
-            <div class="col-sm-6">
-              <div class="form-group">
-                <label>Label 1</label>
-                <button type="button" class="form-control btn-submit btn btn-primary">Button 1</button>
-              </div>
-              <div class="form-group">
-                <label>Label 2</label>
-                <button type="button" class="form-control btn-submit btn btn-primary">Button 2</button>
-              </div>
-            </div>
-            <div class="col-sm-6">
-              <div class="form-group">
-                <label>Label 3</label>
-                <button type="button" class="form-control btn-submit btn btn-primary">Button 3</button>
-              </div>
-              <div class="form-group">
-                <label>Label 4</label>
-                <button type="button" class="form-control btn-submit btn btn-primary">Button 4</button>
-              </div>
-            </div>
-            </div>
-        </div>
-      </div>
-      <div class="col-sm-7 controls">
-        <div class="box">
-          <h1>Stats</h1>
-          <div class="row">
+			<div class="col-sm-6 final-stats">
+          		<span class="primary-figure">100 ETH</span>
+            	<span class="secondary-figures">Out of total allocation of: <strong>1,000,000 ETH</strong> <i class="glyphicon glyphicon-question-sign" data-toggle="tooltip" data-placement="top" title="What is 'Header Option 1'"></i></span>
+          	</div>
           	<div class="col-sm-6">
-            	<div class="total-box">
-                <div class="form-group">
-                  <label>My contribution <i class="glyphicon glyphicon-question-sign" data-toggle="tooltip" data-placement="right" title="Contribution is something you donate"></i></label>
-                  <span>$59.57</span>
-                </div>
-                <div class="form-group inline-items">
-                  <label>My surplus:</label>
-                  <span>$59.57</span>
-                  <i class="glyphicon glyphicon-question-sign" data-toggle="tooltip" data-placement="right" title="Contribution is something you donate"></i>
-                </div>
-                <div class="form-group inline-items">
-                  <i class="fa fa-tag tag-icon"></i>
-                  <label>Fees:</label>
-                  <span>1.00%</span>
-                  <i class="glyphicon glyphicon-question-sign" data-toggle="tooltip" data-placement="right" title="Contribution is something you donate"></i>
-                </div>
-                <div class="form-group inline-items on-lined">
-                  <div class="row">
-                    <div class="col-xs-6">
-                      <label>Total Pool Allocation</label>
-                    </div>
-                    <div class="col-xs-6 text-right">
-                      <span>1,000,000 ETH</span>
-                    </div>
-                    <div class="col-xs-6">
-                      <label>Max per contributor</label>
-                    </div>
-                    <div class="col-xs-6 text-right">
-                      <span>100.59 ETH</span>
-                    </div>
-                    <div class="col-xs-6">
-                      <label>Min per contributor</label>
-                    </div>
-                    <div class="col-xs-6 text-right">
-                      <span>00.50 ETH</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="form-group poor-value">
-                  <label>Poor value <i class="glyphicon glyphicon-question-sign" data-toggle="tooltip" data-placement="right" title="Contribution is something you donate"></i></label>
-                  <span>$59.57</span>
-                </div>
-
-                <div class="form-group inline-items">
-                  <span class="progress-label"><strong>88%</strong> of Capacity</span>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="70"
-                    aria-valuemin="0" aria-valuemax="100" style="width:70%">
-                      70%
-                    </div>
-                  </div>
+				<div class="progress blue circular-progress-bar">
+                    <span class="progress-left">
+                        <span class="progress-bar"></span>
+                    </span>
+                    <span class="progress-right">
+                        <span class="progress-bar"></span>
+                    </span>
+                	<div class="progress-value">90%</div>
+            	</div>
+            </div>
+            <div class="col-sm-6 min-contribution">
+            	<div class="row">
+                	<span class="col-sm-6">Minimum <i class="glyphicon glyphicon-question-sign" data-toggle="tooltip" data-placement="top" title="What is 'Header Option 1'"></i><br>contribution</span>
+                	<span class="col-sm-6">0.50 ETH</span>
                 </div>
             </div>
-            </div>
-            <div class="col-sm-6">
-            	<div class="max-box">
-                	<h3>Maximum</h3>
-                    <div class="top-icon">
-                    	<i class="fa fa-chart-line"></i>
-                    </div>
-                    <div class="real-figures">
-                    	<span>2000</span>
-                        <span>Daily Sale</span>
-                    </div>
-                    <div class="form-group inline-items">
-                      <div class="progress">
-                        <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
-                          70%
-                        </div>
-                      </div>
-                      <span class="progress-label"><strong>88%</strong> of Capacity</span>
-                	</div>
-                </div>
-                <div class="min-box">
-                	<h3>Minimum</h3>
-                    <div class="top-icon">
-                    	<i class="fa fa-chart-bar"></i>
-                    </div>
-                    <div class="real-figures">
-                    	<span>$ 352</span>
-                        <span>Sales Analytics</span>
-                    </div>
-                    <div class="form-group inline-items">
-                      <div class="progress">
-                        <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
-                          70%
-                        </div>
-                      </div>
-                      <span class="progress-label"><strong>88%</strong> of Capacity</span>
-                	</div>
+            <div class="col-sm-6 min-contribution">
+            	<div class="row">
+                	<span class="col-sm-6">maximum <i class="glyphicon glyphicon-question-sign" data-toggle="tooltip" data-placement="top" title="What is 'Header Option 1'"></i> <br>contribution</span>
+                	<span class="col-sm-6">100 ETH</span>
                 </div>
             </div>
-          	
           </div>
-        </div>
-
+          <div class="row">
+          <div class="col-xs-12">
+          	<div class="stats-bottom"></div>
+          </div>
+          		
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label>Label 1 <i class="glyphicon glyphicon-question-sign" data-toggle="tooltip" data-placement="right" title="What is 'Header Option 1'"></i></label>
+                            <button type="button" class="form-control btn-submit btn btn-primary">Button 1</button>
+                        </div>
+                        <div class="form-group">
+                            <label>Label 2 <i class="glyphicon glyphicon-question-sign" data-toggle="tooltip" data-placement="right" title="What is 'Header Option 1'"></i></label>
+                            <button type="button" class="form-control btn-submit btn btn-primary">Button 2</button>
+                        </div>
+                        <div class="form-group">
+                            <label>Label 3 <i class="glyphicon glyphicon-question-sign" data-toggle="tooltip" data-placement="right" title="What is 'Header Option 1'"></i></label>
+                            <button type="button" class="form-control btn-submit btn btn-primary">Button 3</button>
+                        </div>
+                        <div class="form-group">
+                            <label>Label 4 <i class="glyphicon glyphicon-question-sign" data-toggle="tooltip" data-placement="right" title="What is 'Header Option 1'"></i></label>
+                            <button type="button" class="form-control btn-submit btn btn-primary">Button 4</button>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                    	<div class="my-contribution">
+                        	<span>my contribution <i class="glyphicon glyphicon-question-sign" data-toggle="tooltip" data-placement="top" title="What is 'Header Option 1'"></i></span>
+                            <span>1 ETH</span>
+                        </div>
+                    </div>    	
+			</div>
+		</div>
       </div>
   </div>
   <div class="row">
   	<div class="col-sm-12">
-    	<div class="box clearfix">
+    	<div class="box clearfix table-container">
         	<h3 class="table-heading">Transactions</h3>
+            <p>Table description goes here and so on!</p>
             <div class="table-responsive">
-            	<table class="table table-bordered"> 
+            	<table class="table table-bordered table-hover table-striped"> 
                 	<thead> 
                     	<tr> 
                         	<th>#</th> 
@@ -279,6 +204,24 @@
                         <td>Thornton</td>
                         <td>@fat</td>
                    	</tr>
+                    <tr>
+                     	<th scope="row">4</th>
+                     	<td>Larry</td>
+                     	<td>the Bird</td>
+                     	<td>@twitter</td>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                   	</tr>
+                    <tr>
+                     	<th scope="row">5</th>
+                     	<td>Larry</td>
+                     	<td>the Bird</td>
+                     	<td>@twitter</td>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                   	</tr>
                	</tbody>    
           	</table>
           </div>
@@ -294,9 +237,6 @@
     </div>
   </div>
 </div>
-
-
-    
     <!--FOOTER-->
 <footer>
   <div class="container">
@@ -353,7 +293,6 @@
     </div>
   </div>
 </div>
-
 
 <script src="scripts/bootstrap.min.js"></script>
 <script src="scripts/custom.js"></script>

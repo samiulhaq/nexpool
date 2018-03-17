@@ -1,0 +1,40 @@
+
+
+
+Slide 2. Where should I use this css?
+Please see the index.html file i attached in BOW file.
+*You can refer to to the header section in how they are doing the header.
+*
+
+
+
+Slide 8. No.1. 100%? or less ?
+*Satisfied with the existing format, Some little suggestion. “COPY” button in Codebox should be different, take note of the corners of the COPY button, it seems out of place.
+Refer to below
+
+Slide 8. No.3. Can you please show me some example? do you want to add some text after the label or you want me to replace the input with textarea bacause in that case the buttons will not be adjustable with text area.
+*https://tympanus.net/Development/CreativeButtons/
+We(Darren & I) have discussed about the issue with the buttons. currently we feel that the buttons are not really intuitive as a first time user might not know that it is a press able button.
+
+Our suggestion is to have a slight bottom shader to have a elevated feel of the button. and a proper default , onHover , onPress state for each of the buttons?
+
+Please refer to https://tympanus.net/Development/CreativeButtons/
+
+And the video to see the styling we would like.
+
+We would like to see the change in css from COPY to a tick upon pressing. and a deeper color upon on hover.
+
+We would like to implement the the button fill from left to right upon on hover for other buttons.
+
+For all buttons for example, “SUBMIT” or “GO TO DASHBOARD” should have a animated arrow appearing upon hover and change in color upon on hover
+
+All Buttons should have a slight transition and a bottom shadow.
+
+
+
+
+Slide 10. number inside the progress bar is already in center and adjust its position with the percentage change.
+*I have checked the code. progress bar, it seems that the circle progress bar is a static progress bar and I would like to now how are we going to manipulate the chart when we receive the code.
+
+
+
